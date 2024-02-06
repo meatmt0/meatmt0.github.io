@@ -1,0 +1,98 @@
+---
+baseurl: "https://meatmt0.github.io"
+title: "尝为女妄言之"
+copyright: "Copyright © 2024 肉山"
+theme: "PaperMod"
+paginate: 12
+languageCode: "zh-CN"
+rssLimit: 36
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: "production"
+  title: "尝为女妄言之"
+  author: "肉山"
+  dateformat: "2006-01-02"
+  defaultTheme: "light"
+  disableThemeToggle: true
+  hideFooter: false
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 1
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 2
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 3
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 4
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 5
+    - identifier: rss
+      name: 订阅
+      url: /index.xml
+      weight: 6
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
